@@ -4,22 +4,6 @@
 		<link rel="stylesheet" href="../css/app.css">
 		<script src="js/ejs_production.js"></script>
 		<script src="js/jquery-2.1.0.min.js"></script>
-		<script>
-			$(function(){
-				$.ajax({
-					'url': 'data/food1.json',
-					'context': $(".wrapper"),
-					'type':'GET',
-					'dataType': 'json',
-					'success': function(data){
-						
-						var template = new EJS({url: 'views/food.ejs'}).render(data);
-						$(this).append(template);
-					}
-				});
-
-			});
-		</script>
 	</head>
 	<body>
 		<header>
@@ -55,6 +39,22 @@
 			</nav>
 		</header>
 		<div class="wrapper"></div>	
-		<script src="main.js"></script>	
+		<script>
+			$(function(){
+				$.ajax({
+					'url': 'data/food1.json',
+					'context': $(".wrapper"),
+					'type':'GET',
+					'dataType': 'json',
+					'success': function(data){
+						
+						var template = new EJS({url: 'views/food.ejs'}).render(data);
+						$(this).append(template);
+					}
+				});
+
+			});
+		</script>
+		<script src="main.js"></script>
 	</body>
 </html>

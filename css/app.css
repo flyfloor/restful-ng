@@ -10,6 +10,10 @@ html {
 	font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
 }
 
+h1,h2,h3,h4,h5,p {
+	padding: 10px 0; 
+}
+
 a {
 	color: #3390cc;
 	text-decoration: none;
@@ -31,8 +35,6 @@ ul li {
 
 img {
 	width: 100%;
-	border: 1px solid rgba(0,0,0,0.2);
-	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 time {
@@ -63,6 +65,11 @@ input[type="text"] {
 
 textarea {
 	outline: none;
+}
+
+/*all*/
+.grey {
+	color: #aaa;
 }
 
 .wrapper {
@@ -163,138 +170,7 @@ header .auth {
 	font-size: 14px;
 }
 
-.recommend {
-	padding: 100px 0;
-}
-
-.rec-list {
-	padding: 20px 10px;
-}
-
-.food-info {
-	color: #453;
-}
-
-.food-info p {
-	text-indent: 20px;
-	letter-spacing: 1px;
-	line-height: 22px;
-	padding: 10px;
-	padding-right: 0;
-}
-
-.food-info h4, .food-info h5 {
-	color: #484;
-}
-
-.rec-list li {
-	width: 300px;
-	margin: 0 10px;
-	position: relative;
-}
-
-.rec-list li:nth-child(1){
-	width: 100%;
-	background: #fefefc;
-	margin: 0;	
-	margin-bottom: 10px;
-}
-
-.rec-list li:nth-child(1) img{
-	display: inline-block;
-	width: 500px;
-	float: left;
-}
-
-.rec-list li:nth-child(1) .food-info {
-	margin-left: 540px;
-	padding-right: 50px;
-}
-
-.food-thumbnail:hover {
-	background: inherit;
-	color: inherit;
-	box-shadow: none;
-}
-
-.thumbnail-info {
-	position: absolute;
-	display: inline-block;
-	width: 100%;
-	height: 20px;
-	background: #333;
-	color: #cdd;
-	padding: 10px 0;
-	text-align: center;
-	left: 0;
-	bottom: 3px;
-	opacity: 0.8; 
-} 
-
-h1,h2,h3,h4,h5,p {
-	padding: 10px 0; 
-}
-
-.reg-list {
-	padding: 10px 0 1px;
-	border-bottom: 1px solid #eee;
-	margin: 10px 40px;
-	text-align: center;
-}
-
-.reg-list li {
-	padding: 5px 0;
-}
-
-.reg-list a {
-	padding: 5px 20px;
-}
-
-.reg-food {
-	padding: 10px 20px;
-}
-
-
-.regfood-item li:nth-child(1){
-	display: inline-block;
-	float: left;
-	width: 400px;
-	padding: 0 10px;
-	margin: -10px 0 0 30px;
-}
-
-.regfood-item li:nth-child(1) a {
-	padding: 0;
-}
-
-.regfood-item li:nth-child(1) a:hover {
-	background: inherit;
-	color: inherit;
-	box-shadow: none;
-}
-
-.regfood-item img {
-	border: none;
-}
-
-.regfood-item a {
-	font-size: 14px;
-	position: relative;
-	display: inline-block;
-	width: 350px;
-	padding: 5px 10px;
-	margin: 2px 0 0 20px;
-	color: #585;
-}
-
-.regfood-item a:hover {
-	color: #eee;
-}
-
-.regfood-item .like-count {
-	float: right;
-	font-size: 12px;
-}
+/*food page*/
 
 .module {
 	background-color: #fff;
@@ -308,6 +184,11 @@ h1,h2,h3,h4,h5,p {
 article {
 	width: 900px;
 	min-height: 900px;
+}
+
+article img {
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .food-related-nav {
@@ -538,4 +419,107 @@ article .content li {
 	font-size: 14px;
 	font-weight: lighter;
 	color: #999;
+}
+
+/*explore*/
+
+.district-things {
+	padding: 20px 30px;
+	min-height: 900px;
+}
+
+.district-things .district-select {
+	padding: 8px 30px;
+	float: right;
+	margin: -28px 30px;
+	border-radius: 10% 0;
+	box-shadow: 0 0 50px #fffcfc inset;
+}
+
+.district-things .title {
+	padding-left: 10px;
+}
+
+.district-things ul {
+	border-top: 1px dashed #dddddd;
+}
+
+.district-things .food {
+	padding: 10px;
+	width: 550px;
+	float: left;
+}
+
+.district-things .food li {
+	text-align: center;
+	width: 200px;
+	position: relative;
+	margin: 20px;
+}
+
+.district-things .food a {
+	color: #eee;
+	font-size: 14px;
+}
+
+.district-things .food-info {
+	position: absolute;
+	margin: 2px 0;
+	padding: 5px 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.district-things .story {
+	margin-top: 20px;
+}
+
+.district-things .story ul {
+	width: 450px;
+	display: inline-block;
+	padding: 20px;
+	color: #666;
+	height: 400px;
+}
+
+.district-things .story li {
+	display: block;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+.district-things .group {
+	padding: 10px;
+	width: 550px;
+	float: left;
+}
+.district-things .group li {
+	padding: 10px;
+	padding-left: 30px;
+}
+
+.district-things .group img {
+	width: 80px;
+	float: left;
+	margin-top: 10px;
+}
+
+.district-things .group .info {
+	font-size: 14px;
+	margin-left: 100px;
+}
+
+.district-things .group p {
+	padding: 10px;
+	background-color: #eee;
+}
+.district-things .evaluation {
+	margin-top: 70px;
+}
+
+.district-things .evaluation ul {
+	width: 500px;
+	display: inline-block;
 }
