@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<html ng-app="PhotoCast">
+<html>
 	<head>
-		<script src="js/angular.js"></script>
-		<script src="js/angular-resource.js"></script>
-		<script src="js/angular-route.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/services.js"></script>
-		<script src="js/controllers/PhotoController.js"></script>
+		<link rel="stylesheet" href="../css/app.css">
+		<script src="js/ejs_production.js"></script>
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script>
+			$(function(){
+				$.ajax({
+					'url': 'data/food1.json',
+					'context': $(".wrapper"),
+					'type':'GET',
+					'dataType': 'json',
+					'success': function(data){
+						
+						var template = new EJS({url: 'views/food.ejs'}).render(data);
+						$(this).append(template);
+					}
+				});
+
+			});
+		</script>
 	</head>
 	<body>
-		<div ng-view></div>
+		<header>
+			<nav>
+				<div id="site_icon">
+					<a href="#">
+						<img src="../imgs/blueicon.png">
+					</a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li>	
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">探索</a>
+						</li>
+						<li>
+							<a href="#">小组</a>
+						</li>
+					</ul>
+				</div>
+				<div class="auth">
+					<ul>
+						<li>
+							<a href="#" class="signup">注册</a>
+						</li>
+						<li>
+							<a href="#" class="signin">登录</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="wrapper"></div>	
+		<script src="main.js"></script>	
 	</body>
 </html>

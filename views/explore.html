@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/app.css">
+		<script src="js/ejs_production.js"></script>
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script>
+			$(function(){
+				$.ajax({
+					'url': 'data/food1.json',
+					'context': $(".wrapper"),
+					'type':'GET',
+					'dataType': 'json',
+					'success': function(data){
+						
+						var template = new EJS({url: 'views/food.ejs'}).render(data);
+						$(this).append(template);
+					}
+				});
+
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="site_icon">
+					<a href="#">
+						<img src="../imgs/blueicon.png">
+					</a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li>	
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">探索</a>
+						</li>
+						<li>
+							<a href="#">小组</a>
+						</li>
+					</ul>
+				</div>
+				<div class="auth">
+					<ul>
+						<li>
+							<a href="#" class="signup">注册</a>
+						</li>
+						<li>
+							<a href="#" class="signin">登录</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="wrapper">
+			<nav class="district-list">
+				<ul>
+					<li><a href="#">北京</a></li>
+					<li><a href="#">上海</a></li>
+					<li><a href="#">西安</a></li>
+					<li><a href="#">广州</a></li>
+					<li><a href="#">长沙</a></li>
+					<li><a href="#">台北</a></li>
+					<li><a href="#">西安</a></li>
+					<li><a href="#">广州</a></li>
+					<li><a href="#">长沙</a></li>
+					<li><a href="#">台北</a></li>
+					<li><a href="#">西安</a></li>
+					<li><a href="#">广州</a></li>
+					<li><a href="#">长沙</a></li>
+					<li><a href="#">台北</a></li>
+					<li><a href="#">更多</a></li>
+				</ul>
+			</nav>
+			<section class="district-things">
+				<ul class="food">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="story">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="evaluation">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="share">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="group">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</section>
+		</div>	
+	</body>
+</html>

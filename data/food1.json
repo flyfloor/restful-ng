@@ -1,0 +1,92 @@
+{
+	"id":1,
+	"name":"裤带面",
+	"content":"<h3>简介</h3><p>陕西八大怪之一的“面条像裤带”的裤带面,俗称 “biang-biang（现代汉语字典上没有这个字）面”，正宗的关中人所做的帮“biangbiang面”和通常城里人所吃的扯面还是有一定区别的。正宗的“biangbiang面”，一根面条宽度可达二三寸，长度则在1米上下，厚度厚时与硬币差不多，薄时却如同蝉翼。一根面条所用去的面粉通常可达2两，因而对于饭量小的人来说，一根面条足够一顿饭，而对大饭量的关中人来说，一顿吃8两1斤也是轻轻松松的。</p><h3>特点</h3><p>关中人吃面，喜欢将面和硬揉软，擀厚、切宽。这种面煮熟以后，捞在碗里，无论是浇臊子，还是没油辣子。吃起来都很光滑、柔软、热火、有筋性。既可口又耐饥。人们脖子一伸一缩，呼噜噜吞进肚里，吃饱吃胀，饱嗝一打，顿时浑身上下都是力气，拉架子车、上山扛石头，五六个小时不吃不喝也不觉得饿。</p>",
+	"created_time": "2014-04-13",
+	"author":{
+		"name": "深海",
+		"website": "http://www.weibo.com/lacunafario",
+		"avatar": "imgs/author1.jpg",
+		"url": "/people/lacuna"
+	},
+	"images": [
+		"imgs/noodle.jpg"
+	],
+	"pageViews": 300,
+	"storys":[
+		{
+			"title" : "忘不了的裤带面，忘不了的故乡情",
+			"content": "<p>有一天秦宫内载歌载舞、锣鼓喧天，欢庆战争取得胜利。秦始皇却在宫中愁眉不展闷闷不乐，为国家还不安宁，不时要受匈奴的外族入侵，还为筹划修筑万里长城之事劳累过度，平日又是日里万机，龙体受病卧榻不起，御膳房做出各种山珍海味，始皇连看都懒得看一眼。这样一来，急坏了宫内所有宦官，他们像热锅上的蚂蚁，纷纷想方设法，其中一名宦官灵机一动，竟跑到集市上给皇上端来一碗biang biang 面，秦始皇一闻到这浓烈的辣子、葱味，就胃口大开了，端起来一顿猛嚼。不想一吃大发而不可收拾，大声赞叹：民间竟有比山珍海味还香的食物！忙问这是何物？答曰：biang biang 面。Biang biang 面还成为秦始皇御宴必备品...</p>",
+			"url": "storys/story/1",
+			"comments": {
+				"count": 10
+			}
+		},
+		{
+			"title" : "陕北娃的北漂故事",
+			"content": "<p>忘记了从什么时候开始，乱码乱码各种风哇乏味发我if和哇哦发哈我粉红色的话费送咖啡酒文化苏杭覅uwebfwajfbfawfwafhwafawefwf风哇风哇发和瓦房哈维凤凰卡违法哇科副教授级回复将开发为...</p>",
+			"url": "storys/story/2",
+			"comments": {
+				"count": 20
+			}
+		}
+	],
+	"group":[
+		{
+			"name": "陕西面食",
+			"url": "group/1",
+			"avatar": "imgs/wecaneat.jpg",
+			"members":{
+				"count" : 30
+			}
+		},
+		{
+			"name": "北方面食",
+			"url": "group/2",
+			"avatar": "imgs/wecaneat.jpg",
+			"members":{
+				"count" : 1000
+			}
+		},
+		{
+			"name": "陕西吃货群",
+			"url": "group/3",
+			"avatar": "imgs/wecaneat.jpg",
+			"members":{
+				"count" : 340
+			}
+		}
+	],
+	"recommends": [
+		{
+			"name": "油泼面",
+			"url": "food/1",
+			"thumb_img":"imgs/thumb_img.jpg"
+		},
+		{
+			"name": "凉皮",
+			"url": "food/1",
+			"thumb_img":"imgs/thumb_img2.jpg"
+		},
+		{
+			"name": "肉夹馍",
+			"url": "food/1",
+			"thumb_img":"imgs/thumb_img3.jpg"
+		},
+		{
+			"name": "羊肉泡",
+			"url": "food/1",
+			"thumb_img":"imgs/thumb_img2.jpg"
+		},
+		{
+			"name": "羊肉泡",
+			"url": "food/1",
+			"thumb_img":"imgs/thumb_img2.jpg"
+		},
+		{
+			"name": "羊肉泡",
+			"url": "food/1",
+			"thumb_img":"imgs/thumb_img2.jpg"
+		}
+	]
+}
