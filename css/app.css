@@ -471,16 +471,14 @@ article .content li {
 
 .district-things .story {
 	margin-top: 20px;
+	width: 550px;
+	display: inline-block;
 }
 
 .district-things .story ul {
-	width: 500px;
-	display: inline-block;
 	padding: 20px;
 	color: #666;
 	height: 400px;
-	background: #fefefe;
-	border: 1px solid #f8f8f8;
 }
 
 .district-things .story li {
@@ -491,7 +489,7 @@ article .content li {
 .district-things .group {
 	margin-top: 80px;
 	padding: 10px;
-	width: 300px;
+	width: 320px;
 	display: inline-block;
 }
 .district-things .group li {
