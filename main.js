@@ -12,4 +12,18 @@ $(function(){
 								.siblings().css("display", "none");
 	})
 
+	//sample, not in use
+
+	$(".like-food-btn").click(function(){
+		var $icon = $(".like-food-btn").find("i");
+		if ($icon.hasClass("fa-heart")) {
+			$icon.removeClass("fa-heart").addClass("fa-heart-o");
+		}else{
+			$icon.removeClass("fa-heart-o").addClass("fa-heart heart-trans");
+			setTimeout(function(){
+				$icon.removeClass("heart-trans");	
+			}, 1000);
+		}
+	});
+
 });
