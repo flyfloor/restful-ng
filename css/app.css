@@ -95,6 +95,7 @@ quote {
 	font-style: italic;
 	padding: 10px;
 	position: relative;
+	color: #777;
 }
 
 quote:before{
@@ -516,7 +517,7 @@ article .content li {
 	color: #999;
 }
 
-/*explore*/
+/*index when sign out*/
 
 .district-things {
 	padding: 20px 30px;
@@ -658,3 +659,26 @@ article .content li {
 	overflow: hidden;
 	height: 150px;
 }
+
+/*explore*/
+
+/*sign in*/
+#signin {
+	width: 600px;
+	height: 300px;
+	padding: 30px;
+	margin: 100px auto;
+}
+
+#signin li {
+	padding: 20px;
+}
+
+#signin .content {
+	color: #999;
+	padding: 30px;
+	text-align: center;
+}
+
+/*group page*/
+
