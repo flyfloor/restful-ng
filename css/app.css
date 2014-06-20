@@ -114,7 +114,7 @@ quote:after {
 	content: '\0022';
 	position: absolute;
 	right: 0;
-	top: 5px;
+	bottom: 15px;
 }
 
 .heart-trans {
@@ -278,7 +278,6 @@ header .auth {
 
 article {
 	width: 900px;
-	min-height: 900px;
 }
 
 .food-related-nav {
@@ -312,19 +311,26 @@ article {
 
 aside {
 	position: absolute;
-	right: 0;
-	top: 120px;
+	top: 50px;
 	width: 280px;
-	min-height: 400px;
+}
+
+aside.food {
+	right: 0;
+}
+
+aside.user {
+	left: 0;
 }
 
 article p {
 	line-height: 25px;
+	font-size: 14px;
 }
 
 
 article .figure {
-	padding: 50px 30px;
+	padding: 10px 30px 30px;
 }
 
 article .description {
@@ -343,10 +349,9 @@ article .like-food-btn {
 }
 
 article .like-food-btn:hover {
-	box-shadow: 0 0 2px rgba(255,255,0,0.3), 0 0 20px rgba(250,250,250, 0.1) inset;
-	background:none;
-	transition: all 0.5s;
-	border-radius: 0;
+	box-shadow: 0 0 1px rgba(200,200,200,0.1), 0 0 20px rgba(250,250,250, 0.1) inset;
+	background: none;
+	transition: all 1s;
 	border: 1px solid #efefef;
 }
 
@@ -362,7 +367,7 @@ article .bref-info {
 .food-title {
 	text-align: center;
 	display: block;
-	font-size: 30px;
+	font-size: 26px;
 	margin: 20px 0;
 	overflow: hidden;
 	width: 100%;
@@ -491,6 +496,7 @@ article .content li {
 .food-recommend  img{
 	display: block;
 	margin-bottom: 10px;
+	border-radius: 2px;
 }
 
 .food-group li {
@@ -500,7 +506,7 @@ article .content li {
 	height: 80px;
 	background-color: #fefefe;
 	border: 1px solid #eee;
-	border-radius: 0 20% 0 10%;
+	border-radius: 0 10% 0 10%;
 }
 
 .food-group img {
@@ -698,7 +704,8 @@ article .content li {
 	height: 250px;
 	box-shadow: 0 0 1px rgba(100,100,100,0.03);
 	border: 1px solid #e5e5e5;
-	background: -webkit-linear-gradient(left top, #FFFFFF, #f0f0f0);
+	background-image: -webkit-linear-gradient(left top, #FFFFFF, #f0f0f0);
+	background-image: -moz-linear-gradient(left top, #FFFFFF, #f0f0f0);
 }
 
 .group-list .group-item img {
@@ -706,15 +713,17 @@ article .content li {
 	border-radius: 50%;
 }
 
-.group-list .group-item .up, .group-list .group-item .down  {
+.group-list .group-item .up, .group-list .group-item .down {
 	text-align: center;
-}
-
-.group-list .group-item .up {
 	padding: 20px;
 }
+.group-list .group-item .up  {
+	border-bottom: 1px solid #ececec;
+}
 
-.group-list .group-item .down {
+
+.group-list ul {
+	padding: 20px;
 }
 
 .group-list .group-item .grp-nums {
@@ -726,10 +735,39 @@ article .content li {
 
 .join-group-btn {
 	border: 1px solid #ddd;
-	border-radius: 20px;
+	border-radius: 5% 5% 10% 10%;
 	padding: 5px 15px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.03);
 }
 
 .joined {
 	background-color: #dde;
+}
+
+/*users*/
+.user-stuffs {
+	margin-left: 230px;
+}
+
+.user {
+	padding: 20px;
+	width: 180px;
+}
+
+.user .info {
+	padding: 10px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.user .info img {
+	width: 150px;
+}
+
+.user .group {
+	padding: 10px 0;
+}
+
+.user .group img {
+	width: 40px;
+	border-radius: 50%;
 }
