@@ -47,7 +47,8 @@ img {
 
 time {
 	color: #888;
-	padding-right: 10px;
+	margin-right:5px;
+	font-size: 14px;
 }
 
 code {
@@ -138,7 +139,7 @@ quote:after {
 	100%{transform: scale(1);}
 }
 
-/*all*/
+/*all pages basic*/
 .clearfix {
 	clear: both;
 	content: '';
@@ -199,6 +200,14 @@ quote:after {
 	margin-left: 2px;
 	width: 5px;
 	padding-right: 5px;
+}
+
+clip {
+	color: #770;
+	white-space: nowrap;
+	background-color: #e5f5ff;
+	border-left: 1px solid #aaf;
+	padding: 1px 5px;
 }
 
 header {
@@ -277,7 +286,7 @@ header .auth {
 }
 
 article {
-	width: 900px;
+	width: 920px;
 }
 
 .food-related-nav {
@@ -312,7 +321,7 @@ article {
 aside {
 	position: absolute;
 	top: 50px;
-	width: 280px;
+	width: 270px;
 }
 
 aside.food {
@@ -424,7 +433,7 @@ article .content li {
 }
 
 #comment-text {
-	width: 780px;
+	width: 800px;
 	min-height: 80px;
 	margin: 5px 0;
 	resize: vertical;
@@ -487,7 +496,7 @@ article .content li {
 
 .food-recommend li {
 	font-size: 14px;
-	width: 90px;
+	width: 80px;
 	padding: 10px;
 	margin: 5px;
 	text-align: center;
@@ -561,8 +570,10 @@ article .content li {
 .district-things .food li {
 	text-align: center;
 	width: 200px;
+	height: 200px;
 	position: relative;
 	margin: 20px;
+	overflow: hidden;
 }
 
 .district-things .food a {
@@ -571,7 +582,7 @@ article .content li {
 
 .district-things .food-info {
 	position: absolute;
-	margin: 2px 0;
+	margin: 0;
 	padding: 5px 0;
 	bottom: 0;
 	left: 0;
@@ -699,7 +710,7 @@ article .content li {
 .group-list .group-item {
 	margin: 10px;
 	position: relative;
-	padding: 10px;
+	padding: 15px;
 	width: 180px;
 	height: 250px;
 	box-shadow: 0 0 1px rgba(100,100,100,0.03);
@@ -721,11 +732,6 @@ article .content li {
 	border-bottom: 1px solid #ececec;
 }
 
-
-.group-list ul {
-	padding: 20px;
-}
-
 .group-list .group-item .grp-nums {
 	position: absolute;
 	right: 10px;
@@ -745,29 +751,88 @@ article .content li {
 }
 
 /*users*/
-.user-stuffs {
-	margin-left: 230px;
+.user-page {
+	position: relative;
 }
 
-.user {
+.user-stuffs {
+	margin-left: 250px;
+	padding: 0 20px;
+	border-left: 1px solid #eee;
+}
+
+
+section.user {
 	padding: 20px;
 	width: 180px;
+	float: left;
 }
 
-.user .info {
-	padding: 10px 0;
+section.user .info {
+	padding: 10px 0 20px;
 	border-bottom: 1px solid #eee;
 }
 
-.user .info img {
+section.user .info img {
 	width: 150px;
 }
 
-.user .group {
-	padding: 10px 0;
+section.user .group {
+	padding: 10px 0 20px;
 }
 
-.user .group img {
+section.user .group img {
 	width: 40px;
 	border-radius: 50%;
+}
+
+.linkto-all {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+	font-size: 13px;
+	color: #666;
+}
+
+section.like, section.create, section.event{
+	position: relative;
+	padding-bottom: 20px;
+	margin: 10px;
+}
+
+section.like li{
+	text-align: center;
+}
+
+section.like .thumb_img {
+	width: 250px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	margin: 10px 20px;
+	text-align: center;
+}
+
+
+section.like img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+section.create ul {
+	padding: 10px 20px;
+}
+
+section.create li{
+	width: 100%;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+section.create time {
+	margin-left: 10px;
 }
