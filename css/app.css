@@ -706,6 +706,10 @@ article .content li {
 
 /*group page*/
 
+.group-page {
+	
+}
+
 /*group index*/
 .group-list .group-item {
 	margin: 10px;
@@ -750,7 +754,7 @@ article .content li {
 	background-color: #dde;
 }
 
-/*users*/
+/*user page*/
 .user-page {
 	position: relative;
 }

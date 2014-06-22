@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/app.css">
+		<script src="/js/ejs_production.js"></script>
+		<script src="/js/jquery-2.1.0.min.js"></script>
+		<link rel="stylesheet" href="http://cdn.staticfile.org/font-awesome/4.0.3/css/font-awesome.css">
+		<script>
+			// $(function(){
+			// 	$.ajax({
+			// 		'url': '../data/food1.json',
+			// 		'context': $(".wrapper"),
+			// 		'type':'GET',
+			// 		'dataType': 'json',
+			// 		'success': function(data){
+			// 			var template = new EJS({url: 'food.ejs'}).render(data);
+						
+			// 		}
+			// 	});
+
+			// });
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div id="site_icon">
+					<a href="#">
+						<img src="/imgs/blueicon.png">
+					</a>
+				</div>
+				<div class="nav">
+					<ul>
+						<li>	
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">探索</a>
+						</li>
+						<li>
+							<a href="#">小组</a>
+						</li>
+					</ul>
+				</div>
+				<div class="auth">
+					<ul>
+						<li>
+							<a href="#" class="signin">登录</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="wrapper">
+			<div class="group-page module">
+				<section class="group">
+					<div class="info">
+						<img src="/imgs/group1.jpg">
+						<h3>落在深海</h3>
+						<quote>维斯特洛最冷酷实用主义，有奇怪的情结。#请把你世界的歌流向我，改变我#</quote>
+					</div>
+					<div class="member">
+						<h4>成员</h4>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="/imgs/avatar1.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/imgs/avatar2.jpg">
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="/imgs/avatar3.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<article class="group-stuffs">
+					<section class="event">
+						<h4>小组活动</h4>
+						<ul>
+							<li>
+								<div class="thumb_img">
+									<a href="#">
+										<img src="/imgs/food1.jpg">
+									</a>
+								</div>
+								<span><a href="#">裤带面</a></span>
+							</li>
+							<li>
+								<div class="thumb_img">
+									<a href="#">
+										<img src="/imgs/food2.jpg">
+									</a>
+								</div>
+								<span><a href="#">凉皮</a></span>
+							</li>
+							<li>
+								<div class="thumb_img">
+									<a href="#">
+										<img src="/imgs/food3.jpg">
+									</a>
+								</div>
+								<span><a href="#">肉夹馍</a></span>
+							</li>
+						</ul>
+					</section>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>
