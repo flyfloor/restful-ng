@@ -287,6 +287,7 @@ header .auth {
 
 article {
 	width: 920px;
+	min-height: 400px;
 }
 
 .food-related-nav {
@@ -707,10 +708,54 @@ article .content li {
 /*group page*/
 
 .group-page {
-	
+	position: relative;
+}
+
+section.group {
+	padding: 20px;
+	width: 180px;
+	float: left;
+}
+
+section.group .info {
+	padding: 10px 0 20px;
+	border-bottom: 1px solid #eee;
+}
+
+section.group .member {
+	padding: 10px 0 20px;
+}
+
+section.group .member img {
+	width: 40px;
+	border-radius: 50%;
+}
+
+.group-stuffs {
+	margin-left: 250px;
+	padding: 0 20px;
+	border-left: 1px solid #eee;
+}
+
+section.event {
+	position: relative;
+	padding-bottom: 20px;
+	margin: 10px;
 }
 
 /*group index*/
+.group-list {
+	position: relative;
+}
+
+
+.local-label {
+	font-size: 14px;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+
 .group-list .group-item {
 	margin: 10px;
 	position: relative;
@@ -775,10 +820,6 @@ section.user {
 section.user .info {
 	padding: 10px 0 20px;
 	border-bottom: 1px solid #eee;
-}
-
-section.user .info img {
-	width: 150px;
 }
 
 section.user .group {
