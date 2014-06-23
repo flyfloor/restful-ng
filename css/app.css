@@ -718,29 +718,44 @@ section.group {
 }
 
 section.group .info {
-	padding: 10px 0 20px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #eee;
 }
 
-section.group .member {
-	padding: 10px 0 20px;
+section.member {
+	padding: 10px 20px;
 }
 
-section.group .member img {
+section.member img {
 	width: 40px;
-	border-radius: 50%;
 }
 
 .group-stuffs {
+	position: relative;
 	margin-left: 250px;
 	padding: 0 20px;
 	border-left: 1px solid #eee;
 }
 
-section.event {
-	position: relative;
-	padding-bottom: 20px;
+.group-stuffs section.event {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
 	margin: 10px;
+	border-right: 1px solid #eee;
+	height: 100%;
+}
+
+.group-stuffs section.member {
+	position: absolute;
+	left: 80%;
+	height: 100%;
+	top: 0;
+}
+
+.group-stuffs section.member li {
+	padding: 5px;
 }
 
 /*group index*/
@@ -818,7 +833,7 @@ section.user {
 }
 
 section.user .info {
-	padding: 10px 0 20px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #eee;
 }
 
@@ -839,7 +854,7 @@ section.user .group img {
 	color: #666;
 }
 
-section.like, section.create, section.event{
+.user-stuffs section.like, .user-stuffs section.create, .user-stuffs section.event{
 	position: relative;
 	padding-bottom: 20px;
 	margin: 10px;
