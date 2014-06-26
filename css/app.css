@@ -286,7 +286,8 @@ header .auth {
 }
 
 article {
-	width: 920px;
+	width: 860px;
+	margin: 0 auto;
 	min-height: 400px;
 }
 
@@ -849,7 +850,7 @@ section.user .group img {
 .linkto-all {
 	position: absolute;
 	top: 15px;
-	right: 20px;
+	right: 10px;
 	font-size: 13px;
 	color: #666;
 }
@@ -865,8 +866,8 @@ section.like li{
 }
 
 section.like .thumb_img {
-	width: 250px;
-	height: 200px;
+	width: 220px;
+	height: 180px;
 	overflow: hidden;
 	position: relative;
 	margin: 10px 20px;
