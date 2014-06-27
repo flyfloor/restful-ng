@@ -4,12 +4,12 @@ html,body,div,section,p,pre,aside,header,footer,article,figure,ul,li, input,butt
 	outline: none;
 }
 
-::-moz-placeholder { font-style: italic; font-weight: lighter; font-size: 14px; color: #789 }
-::-webkit-input-placeholder { font-style: italic; font-weight: lighter; font-size: 14px; color: #789 }
+::-moz-placeholder { font-style: italic; font-weight: lighter; font-size: 14px; color: #777 }
+::-webkit-input-placeholder { font-style: italic; font-weight: lighter; font-size: 14px; color: #777 }
 
 html {
 	color: #584141;
-	background: #f5faf5;
+	background: #e5efef;
 	font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
 }
 
@@ -93,7 +93,7 @@ textarea {
 	outline: none;
 	border: 1px solid #ccc;
 	border-radius: 2px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.09) inset;
+	box-shadow: 0 1px 1px rgba(100,100,100,0.1) inset;
 }
 
 quote {
@@ -146,10 +146,10 @@ quote:after {
 }
 
 .btn {
-	padding: 10px 5px;
-	background-color: #EEE9E9;
+	padding: 8px 5px;
+	background-color: #f8f8f8;
 	color: #6B6B6B;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	cursor: pointer;
 	border-radius: 3px;
 	min-width: 60px;
@@ -170,19 +170,20 @@ quote:after {
 }
 
 .wrapper {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	position: relative;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 .submit-btn {
 	cursor: pointer;
-	padding: 5px 20px;
+	padding: 6px 20px;
 	border: 1px solid #3545A2;
-	background: #559;
+	background-color: #559;
 	color: #fff;
 	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	border-radius: 2px;	
 }
 
 .submit-btn:hover {
@@ -190,7 +191,7 @@ quote:after {
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
 	-o-transition: all 1s;
-	background: #55a;
+	background: #5f5faf;
 	cursor: pointer;
 	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
 }
@@ -280,43 +281,44 @@ header .auth {
 .module {
 	background-color: #fff;
 	border-radius: 2px;
+	margin-bottom: 10px;
 	margin-top: 10px;
 	padding: 20px 10px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	box-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
 
 article {
 	width: 860px;
 	margin: 0 auto;
-	min-height: 400px;
+	min-height: 600px;
 }
 
 .food-related-nav {
-	padding: 1px;
-	margin: 10px 0 0;
+	margin-top: 30px;
 }
 
 .food-related-nav li {
 	cursor: pointer;
-	margin: 0;
-	padding: 5px 20px;
+	margin: 0 -1px 1px;
+	padding: 6px 20px;
 	font-size: 14px;
+	color: #777;
 }
 
 .nav-active {
-	border: 1px solid #ddd;
-	border-bottom: none;
+	border: 1px solid #ccc;
 	border-top: 2px solid rgba(200,0,0,0.5);
+	border-bottom: none;
 	background-color: #fff;
-	color: #000;
+	color: #555 !important;
+	font-weight: bold;
 }
 
 .food-story, .food-evaluation, .food-comments, .food-share {
 	margin-top: -2px;
-	margin-bottom: 20px;
 }
 
-.food-evaluation, .food-comments, .food-share {
+.food-evaluation, .food-story, .food-share {
 	display: none;
 }
 
@@ -360,19 +362,20 @@ article .like-food-btn {
 }
 
 article .like-food-btn:hover {
-	box-shadow: 0 0 1px rgba(200,200,200,0.1), 0 0 20px rgba(250,250,250, 0.1) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 0 40px rgba(0,255,0, 0.03) inset;
 	background: none;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
 	transition: all 1s;
-	border: 1px solid #efefef;
+	border: 1px solid #ddd;
 }
 
-article .bref-info {
+article .bref-author-info {
 	color: #524D39;
 	font-size: 14px;
-	border-top: 1px dashed #efefef;
-	margin-top: -2px;
-	padding-bottom: 70px;
-	box-shadow: none;
+	border-top: 1px dashed #ddd;
+	margin: 10px 0;
+	padding: 20px 0 50px;
 }
 
 .food-title {
@@ -386,25 +389,25 @@ article .bref-info {
 	line-height: 40px;
 }
 
-.bref-info .author {
+.bref-author-info .author {
 	width: 200px;
 	margin-left: 40px;
 	float: left;
 }
 
-.bref-info .author span {
+.bref-author-info .author span {
 	margin: 30px 10px 0;
 	display: inline-block;
 }
 
-.bref-info .view {
+.bref-author-info .view {
 	margin-left: 420px;
 	float: left;
 	margin-top: 30px;
 	color: #888;
 }
 
-.bref-info img, .avatar img {
+.bref-author-info img, .avatar img {
 	width: 48px;
 	border-radius: 50px;
 	float: left;
@@ -435,7 +438,7 @@ article .content li {
 }
 
 #comment-text {
-	width: 800px;
+	width: 750px;
 	min-height: 80px;
 	margin: 5px 0;
 	resize: vertical;
@@ -463,16 +466,6 @@ article .content li {
 	position: absolute;
 	right: 10px;
 	top: 10px;
-}
-
-.vote-action button {
-	padding: 10px 0;
-	background-color: #EEE9E9;
-	color: #6B6B6B;
-	border: 1px solid #eee;
-	cursor: pointer;
-	border-radius: 3px;
-	width: 60px;
 }
 
 .vote-action button:hover {
@@ -542,152 +535,36 @@ article .content li {
 }
 
 /*index when sign out*/
-
-.district-things {
-	padding: 20px 30px;
-	font-size: 14px;
-	margin-bottom: 20px;
+.banner {
+	width: 860px;
+	margin: 0 auto;
 }
 
-.district-things .district-select {
-	padding: 8px 30px;
-	float: right;
-	margin: -28px 30px;
+.food-list-module {
+	margin: 10px 10px 20px;
+	position: relative;
 }
 
-.district-things .title {
-	padding-left: 10px;
-}
-
-.district-things ul {
-	border-top: 1px dashed #dddddd;
-}
-
-.district-things .food {
-	padding: 10px;
-	width: 530px;
-	float: left;
-}
-
-.district-things .food li {
+.food-list-module li {
 	text-align: center;
-	width: 200px;
+}
+
+.food-list-module  .thumb_img {
+	width: 250px;
 	height: 200px;
-	position: relative;
-	margin: 20px;
 	overflow: hidden;
-}
-
-.district-things .food a {
-	color: #eee;
-}
-
-.district-things .food-info {
-	position: absolute;
-	margin: 0;
-	padding: 5px 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(0,0,0,0.3);
-}
-
-.district-things .story {
-	margin-top: 20px;
-	width: 550px;
-	display: inline-block;
-}
-
-.district-things .story ul {
-	padding: 20px;
-	color: #666;
-	height: 400px;
-}
-
-.district-things .story li {
-	display: block;
-	line-height: 24px;
-}
-
-.district-things .group {
-	margin-top: 80px;
-	padding: 10px;
-	width: 320px;
-	display: inline-block;
-}
-.district-things .group li {
-	padding: 10px;
-	padding-left: 30px;
-}
-
-.district-things .group img {
-	width: 70px;
-	float: left;
-	margin-top: 10px;
-	border-radius: 5% 10%;
-}
-
-.district-things .group .info {
-	margin-left: 90px;
-}
-
-.district-things .evaluation {
-	margin-top: 10px;
-	width: 770px;
-	float: left;
-	clear: left;
-}
-
-.district-things .evaluation .food-img {
-	width: 200px;
-	display: inline-block;
-	float: left;
-	margin-top: 10px;
-}
-
-.district-things .evaluation li {
 	position: relative;
-	padding: 10px 0 20px 20px;
+	margin: 10px;
 }
 
-.district-things .evaluation .info {
-	float:left;
-	margin: 10px 0;
-	color: #955;
-	font-size: 12px;
-}
-
-.district-things .evaluation .content {
-	line-height: 20px;
-	position: relative;
-	padding: 20px;
-	margin-left: 20px;
-	display: inline-block;
-	width: 450px;
-	background-color: #fcfffc;
-	height: 200px;
-	border: 1px solid #fafafa;
-}
-
-.district-things .evaluation .content:before {
-	content: '';
+.food-list-module  .thumb_img img {
 	position: absolute;
-	border-style: solid;
-	display: inline-block;
 	top: 0;
 	left: 0;
-	border-width: 10px 5px;
-	margin-top: 10px;
-	border-color: #cca transparent transparent #cca;
+	right: 0;
+	bottom: 0;
+	margin: auto;
 }
-
-.district-things .evaluation .bref {
-	overflow: hidden;
-	height: 150px;
-}
-
-/*explore*/
-
 /*sign in*/
 #signin {
 	width: 600px;
@@ -852,7 +729,7 @@ section.user .group img {
 	top: 15px;
 	right: 10px;
 	font-size: 13px;
-	color: #666;
+	color: #777;
 }
 
 .user-stuffs section.like, .user-stuffs section.create, .user-stuffs section.event{
