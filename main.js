@@ -1,6 +1,5 @@
 $(function(){
-	//food related display
-	
+	//food related display	
 	$(document).on("click", ".food-related-nav li", function(){
 		var index = $(".food-related-nav li").index($(this));
 
@@ -13,7 +12,6 @@ $(function(){
 	})
 
 	//sample, not in use
-
 	$(".like-food-btn").click(function(){
 		var $icon = $(".like-food-btn").find("i");
 		if ($icon.hasClass("fa-heart")) {
@@ -25,5 +23,22 @@ $(function(){
 			}, 1000);
 		}
 	});
+
+	// area-select display
+
+	$("#area-select").click(function(event){
+		event.stopPropagation();
+		var $elem = $(".banner").children("ul"),
+				$i = $(this).find("i");
+		if($i.hasClass("fa-caret-down")){
+			$i.removeClass("fa-caret-down").addClass("fa-caret-up");
+			$elem.stop().slideDown();
+		}else{
+			$i.removeClass("fa-caret-up").addClass("fa-caret-down");
+			$elem.stop().slideUp();
+		}
+
+		return false;
+	})
 
 });

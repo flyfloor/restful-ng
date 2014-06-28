@@ -18,11 +18,11 @@ h1,h2,h3,h4,h5,p {
 }
 
 i {
-	margin-right: 2px;
+	margin: 0 2px;
 }
 
 a {
-	color: #3390cc;
+	color: #4183c4;
 	text-decoration: none;
 }
 
@@ -173,7 +173,7 @@ quote:after {
 	width: 1160px;
 	margin: 0 auto;
 	position: relative;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 .submit-btn {
@@ -275,9 +275,6 @@ header .auth {
 	padding: 0 50px 0 0;
 	font-size: 14px;
 }
-
-/*food page*/
-
 .module {
 	background-color: #fff;
 	border-radius: 2px;
@@ -287,11 +284,23 @@ header .auth {
 	box-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
 
+.ete-module{
+	background-color: #fff;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 20px 10px;
+}
+
 article {
 	width: 860px;
 	margin: 0 auto;
 	min-height: 600px;
 }
+
+/*food page*/
+
+
 
 .food-related-nav {
 	margin-top: 30px;
@@ -535,9 +544,50 @@ article .content li {
 }
 
 /*index when sign out*/
+.index-page {
+	margin: 10px auto;
+	width: 960px;
+	font-size: 15px;
+}
+
 .banner {
-	width: 860px;
-	margin: 0 auto;
+	padding: 10px 5px;
+	font-size: 14px;
+	position: relative;
+}
+
+.banner h2 {
+	border-bottom: 1px solid #eee;
+}
+
+.banner .area-label {
+	position: absolute;
+	right: 0;
+	top: 25px;
+	word-spacing: 5px;
+}
+#area-select {
+	padding: 5px 8px;
+	color: #555;
+	border: 1px solid #eee;
+	background-color: #f5f5f5;
+}
+
+.banner ul {
+	display: none;
+	padding: 20px;
+	margin: 10px 0;
+	background-color: #f8f8f8;
+	border: 1px dashed #eee;
+}
+
+.banner li {
+	margin: 5px;
+	padding: 5px 15px;
+}
+
+.banner li:hover {
+	background-color: #fff;
 }
 
 .food-list-module {
@@ -547,17 +597,38 @@ article .content li {
 
 .food-list-module li {
 	text-align: center;
+	position: relative;
 }
 
-.food-list-module  .thumb_img {
-	width: 250px;
-	height: 200px;
+.food-list-module  .thumb_img, .food-list-module .overlay {
+	width: 210px;
+	height: 190px;
 	overflow: hidden;
-	position: relative;
 	margin: 10px;
 }
+.food-list-module  .thumb_img {
+	position: relative;
+}
 
-.food-list-module  .thumb_img img {
+.food-list-module .overlay {
+	opacity: 0;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+	color: #cfcfcf;
+	box-shadow: 1px 2px 10px rgba(0,0,0,1);
+}
+
+.food-list-module .overlay:hover {
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	opacity: 1;
+}
+
+.food-list-module  .thumb_img img, .food-list-module .overlay>span {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -565,6 +636,14 @@ article .content li {
 	bottom: 0;
 	margin: auto;
 }
+.food-list-module .overlay span {
+	width: 91%;
+	height: 20%;
+	padding: 10% 5%;
+	top: 30%;
+	background-color:rgba(255,255,255,0.2);
+}
+
 /*sign in*/
 #signin {
 	width: 600px;
@@ -731,6 +810,7 @@ section.user .group img {
 	font-size: 13px;
 	color: #777;
 }
+
 
 .user-stuffs section.like, .user-stuffs section.create, .user-stuffs section.event{
 	position: relative;
