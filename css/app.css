@@ -7,13 +7,13 @@ html,body,div,section,p,pre,aside,header,footer,article,figure,ul,li, input,butt
 ::-moz-placeholder { font-style: italic; font-weight: lighter; font-size: 14px; color: #777 }
 ::-webkit-input-placeholder { font-style: italic; font-weight: lighter; font-size: 14px; color: #777 }
 
-html.white {
+body.white {
 	background-color: #fff;
 }
 
-html {
+body {
 	color: #584141;
-	background: #e5efef;
+	background: #f3f3f3;
 	font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
 }
 
@@ -174,7 +174,7 @@ quote:after {
 }
 
 .wrapper {
-	width: 1100px;
+	width: 1160px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -297,7 +297,7 @@ header .auth {
 }
 
 article {
-	width: 800px;
+	width: 780px;
 	margin: 0 auto;
 	min-height: 600px;
 }
@@ -337,7 +337,7 @@ article {
 
 aside {
 	position: absolute;
-	top: 20px;
+	top: 0;
 	right: 0;
 	width: 330px;
 }
@@ -403,7 +403,7 @@ article .bref-author-info {
 }
 
 .bref-author-info .view {
-	margin-left: 420px;
+	margin-left: 350px;
 	float: left;
 	margin-top: 30px;
 	color: #888;
@@ -438,7 +438,7 @@ article .content ul li {
 }
 
 #comment-text {
-	width: 680px;
+	width: 660px;
 	min-height: 80px;
 	margin: 5px 0;
 	resize: vertical;
@@ -766,6 +766,8 @@ section.member img {
 /*user page*/
 .user-page {
 	position: relative;
+	margin: 20px auto;
+	width: 1050px;
 }
 
 .user-stuffs {
@@ -861,10 +863,12 @@ article.post-page {
 	margin-left: 0;
 }
 
-.post-title {
-	color: #555;
+.post-main {
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
-.post-comment {
-	width: 800px;
+.post-title {
+	color: #555;
 }
