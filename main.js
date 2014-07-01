@@ -28,7 +28,7 @@ $(function(){
 
 	$("#area-select").click(function(event){
 		event.stopPropagation();
-		var $elem = $(".banner").children("ul"),
+		var $elem = $(".header").children("ul"),
 				$i = $(this).find("i");
 		if($i.hasClass("fa-caret-down")){
 			$i.removeClass("fa-caret-down").addClass("fa-caret-up");
