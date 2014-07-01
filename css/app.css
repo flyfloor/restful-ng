@@ -284,7 +284,7 @@ header .auth {
 	border-radius: 2px;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	padding: 20px 10px;
+	padding: 20px;
 	box-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
 
@@ -327,26 +327,19 @@ article {
 	font-weight: bold;
 }
 
-.food-story, .food-evaluation, .food-comments, .food-share {
+.food-page .food-story, .food-page .food-evaluation, .food-page .food-comments, .food-page .food-share {
 	margin-top: -2px;
 }
 
-.food-evaluation, .food-story, .food-share {
+.food-page .food-evaluation, .food-page .food-story, .food-page .food-share {
 	display: none;
 }
 
 aside {
 	position: absolute;
-	top: 50px;
-	width: 270px;
-}
-
-aside.food {
+	top: 20px;
 	right: 0;
-}
-
-aside.user {
-	left: 0;
+	width: 330px;
 }
 
 article p {
@@ -354,10 +347,6 @@ article p {
 	font-size: 14px;
 }
 
-
-article .figure {
-	padding: 10px 30px 30px;
-}
 
 article .description {
 	margin:10px 0;
@@ -427,18 +416,16 @@ article .bref-author-info {
 	margin-right: 10px;
 }
 
-article .content {
-	padding: 20px;
-}
 
-article .content li {
+article .content ul li {
 	list-style-type: disc;
 	display: list-item;
 	margin-left: 30px;
 }
 
+
 .food-comments .hd, .food-comments .bd {
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .food-comments .comment-item {
@@ -867,4 +854,17 @@ section.create li{
 
 section.create time {
 	margin-left: 10px;
+}
+
+/*story + evaluation page*/
+article.post-page {
+	margin-left: 0;
+}
+
+.post-title {
+	color: #555;
+}
+
+.post-comment {
+	width: 800px;
 }
