@@ -13,7 +13,7 @@ body.white {
 
 body {
 	color: #584141;
-	background: #f3f3f3;
+	background: #EBECED;
 	font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
 }
 
@@ -26,7 +26,7 @@ i {
 }
 
 a {
-	color: #4183c4;
+	color: #494F59;
 	text-decoration: none;
 }
 
@@ -37,6 +37,7 @@ a:hover {
 	-o-transition: all 1s;
 	transition: all 1s;
 	color: #005580;
+	text-decoration: underline;
 }
 
 ul li {
@@ -174,7 +175,7 @@ quote:after {
 }
 
 .wrapper {
-	width: 1160px;
+	width: 1050px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -285,7 +286,8 @@ header .auth {
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding: 20px;
-	box-shadow: 0 0 2px rgba(0,0,0,0.3);
+	font-size: 15px;
+	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.05),0 1px 2px 0 rgba(0,0,0,0.1);
 }
 
 .ete-module{
@@ -297,7 +299,7 @@ header .auth {
 }
 
 article {
-	width: 780px;
+	width: 760px;
 	margin: 0 auto;
 	min-height: 600px;
 }
@@ -340,7 +342,7 @@ aside {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 330px;
+	width: 280px;
 }
 
 article p {
@@ -355,13 +357,14 @@ article .description {
 }
 
 article .like-food-btn {
-	background-color: #fff;
+	background-color: #f8f8f8;
 	font-size: 20px;
 	color: #9B2828;
-	border: 1px solid #f5f5f5;
-	border-radius: 0;
-	padding: 10px 20px;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	padding: 8px 20px;
 	word-spacing: 0;
+	box-shadow: 0 1px 0 2px rgba(0,0,0,0.01);
 }
 
 article .like-food-btn:hover {
@@ -439,7 +442,7 @@ article .content ul li {
 }
 
 #comment-text {
-	width: 660px;
+	width: 640px;
 	min-height: 80px;
 	margin: 5px 0;
 	resize: vertical;
@@ -761,11 +764,10 @@ section.member img {
 .user-page {
 	position: relative;
 	margin: 20px auto;
-	width: 1050px;
 }
 
 .user-stuffs {
-	margin-left: 250px;
+	margin-left: 240px;
 	padding: 0 20px;
 	border-left: 1px solid #eee;
 }
@@ -853,7 +855,8 @@ section.create time {
 }
 
 /*story + evaluation page*/
-article.post-page {
+.post-page {
+	margin-top: 10px;
 	margin-left: 0;
 }
 
@@ -863,6 +866,37 @@ article.post-page {
 	top: 0;
 }
 
+.post-main>h1 {
+	border-bottom: 1px dashed #eee;
+}
+
 .post-title {
 	color: #555;
 }
+
+.post-page aside img {
+	width: 100px;
+	height: 100px;
+	margin: 10px 20px;
+	margin-left: 0;
+	float: left;
+}
+
+.post-page aside .info {
+	padding-top: 10px;
+}
+
+aside .info h3 {
+	font-weight: lighter;
+}
+
+.post-page aside .top-story {
+	clear: both;	
+}
+
+aside .top-story li {
+	padding: 5px 0;
+	display: block;
+	font-size: 14px;
+}
+
