@@ -299,7 +299,7 @@ header .auth {
 }
 
 article {
-	width: 760px;
+	width: 780px;
 	margin: 0 auto;
 	min-height: 600px;
 }
@@ -342,7 +342,7 @@ aside {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 280px;
+	width: 250px;
 }
 
 article p {
@@ -442,7 +442,7 @@ article .content ul li {
 }
 
 #comment-text {
-	width: 640px;
+	width: 660px;
 	min-height: 80px;
 	margin: 5px 0;
 	resize: vertical;
@@ -767,8 +767,8 @@ section.member img {
 }
 
 .user-stuffs {
-	margin-left: 240px;
-	padding: 0 20px;
+	margin-left: 230px;
+	padding: 0 10px;
 	border-left: 1px solid #eee;
 }
 
