@@ -145,6 +145,19 @@ quote:after {
 }
 
 /*all pages basic*/
+.avatar img {
+	border: 2px solid #fff;
+}
+
+.avatar img:hover {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
 .clearfix {
 	clear: both;
 	content: '';
@@ -441,7 +454,7 @@ article .content ul li {
 	padding: 50px 20px;
 }
 
-#comment-text {
+article textarea {
 	width: 660px;
 	min-height: 80px;
 	margin: 5px 0;
@@ -875,8 +888,8 @@ section.create time {
 }
 
 .post-page aside img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	margin: 10px 20px;
 	margin-left: 0;
 	float: left;
@@ -900,3 +913,10 @@ aside .top-story li {
 	font-size: 14px;
 }
 
+.post-comment .hd, .post-comment .bd {
+	margin-left: 30px;
+}
+
+.post-comment .comment-item {
+	margin-left: 0;
+}
