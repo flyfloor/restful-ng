@@ -13,7 +13,7 @@ body.white {
 
 body {
 	color: #584141;
-	background: #EBECED;
+	background: #f0f0f0;
 	font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
 }
 
@@ -87,10 +87,8 @@ input[type="tel"]:focus,
 input[type="url"]:focus, 
 input[type="text"]:focus,
 textarea:focus {
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	border: 1px solid #9af;
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.09) inset, 0 0 10px rgba(222, 236, 245, 0.3);
+	border: 1px solid #bbb;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,0.01) inset,0 1px 2px 0 rgba(0,0,0,0.03) inset;
 }
 
 textarea {
@@ -98,7 +96,6 @@ textarea {
 	outline: none;
 	border: 1px solid #ccc;
 	border-radius: 2px;
-	box-shadow: 0 1px 1px rgba(100,100,100,0.1) inset;
 }
 
 quote {
@@ -145,8 +142,13 @@ quote:after {
 }
 
 /*all pages basic*/
+a.action {
+	font-size: 14px;
+	text-decoration: none;
+}
+
 .avatar img {
-	border: 2px solid #fff;
+	border: 1px solid #fff;
 }
 
 .avatar img:hover {
@@ -155,7 +157,7 @@ quote:after {
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
 }
 
 .clearfix {
@@ -164,7 +166,7 @@ quote:after {
 }
 
 .btn {
-	padding: 8px 5px;
+	padding: 6px 5px;
 	background-color: #f8f8f8;
 	color: #6B6B6B;
 	border: 1px solid #ddd;
@@ -196,11 +198,11 @@ quote:after {
 .submit-btn {
 	cursor: pointer;
 	padding: 6px 20px;
-	border: 1px solid #3545A2;
-	background-color: #559;
+	border: 1px solid #888888;
+	background-color: #7DAA98;
 	color: #fff;
-	box-shadow: 0 1px 5px rgba(0,0,0,0.3);
-	border-radius: 2px;	
+	border-radius: 2px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
 }
 
 .submit-btn:hover {
@@ -208,13 +210,13 @@ quote:after {
 	-moz-transition: all 1s;
 	-ms-transition: all 1s;
 	-o-transition: all 1s;
-	background: #5f5faf;
+	background-color: #7C9B8B;
 	cursor: pointer;
-	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-.separator 
-{	border-left: 1px solid #999;
+.separator {	
+	border-left: 1px solid #999;
 	margin-left: 2px;
 	width: 5px;
 	padding-right: 5px;
@@ -226,7 +228,8 @@ clip {
 	white-space: nowrap;
 	background-color: #e5f5ff;
 	border-left: 1px solid #aaf;
-	padding: 1px 5px;
+	padding: 3px 5px;
+	margin-left: 3px;
 }
 
 header {
@@ -302,6 +305,10 @@ header .auth {
 	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.05),0 1px 2px 0 rgba(0,0,0,0.1);
 }
 
+.module:hover {
+	box-shadow: 0 1px 4px 1px rgba(0,0,0,0.05), 0 1px 2px 0 rgba(0,0,0,0.2);
+}
+
 .ete-module{
 	background-color: #fff;
 	border-radius: 2px;
@@ -333,17 +340,14 @@ article {
 }
 
 .nav-active {
-	border: 1px solid #ddd;
-	border-top: 2px solid rgba(200,0,0,0.5);
-	border-bottom: none;
-	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 	color: #555 !important;
 	font-weight: bold;
-	border-radius: 2px 2px 0 0;
 }
 
 .food-page .food-story, .food-page .food-evaluation, .food-page .food-comments, .food-page .food-share {
 	margin-top: -2px;
+	border-top: 1px solid #ccc;
 }
 
 .food-page .food-evaluation, .food-page .food-story, .food-page .food-share {
@@ -351,10 +355,8 @@ article {
 }
 
 aside {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 250px;
+	float: right;
+	min-width: 200px;
 }
 
 article p {
@@ -369,23 +371,23 @@ article .description {
 }
 
 article .like-food-btn {
-	background-color: #f8f8f8;
+	background: none;
 	font-size: 20px;
 	color: #9B2828;
-	border: 1px solid #e5e5e5;
+	border: 1px dashed #c88;
 	border-radius: 2px;
 	padding: 8px 20px;
 	word-spacing: 0;
-	box-shadow: 0 1px 0 2px rgba(0,0,0,0.01);
+	box-shadow: none;
 }
 
 article .like-food-btn:hover {
-	box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 0 40px rgba(0,255,0, 0.03) inset;
+	box-shadow: none;
 	background: none;
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
-	border: 1px solid #ddd;
+	border-style: solid;
 }
 
 article .bref-author-info {
@@ -394,6 +396,7 @@ article .bref-author-info {
 	border-top: 1px dashed #ddd;
 	margin: 10px 0;
 	padding: 20px 0 50px;
+	position: relative;
 }
 
 .food-title {
@@ -403,13 +406,13 @@ article .bref-author-info {
 	margin: 20px 0;
 	overflow: hidden;
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	height: 30px;
+	line-height: 30px;
 }
 
 .bref-author-info .author {
 	width: 200px;
-	margin-left: 40px;
+	margin-left: 10px;
 	float: left;
 }
 
@@ -419,10 +422,10 @@ article .bref-author-info {
 }
 
 .bref-author-info .view {
-	margin-left: 350px;
-	float: left;
-	margin-top: 30px;
+	position: absolute;
+	right: 10px;
 	color: #888;
+	bottom: 0;
 }
 
 .bref-author-info img, .avatar img {
@@ -440,12 +443,12 @@ article .content ul li {
 }
 
 
-.food-comments .hd, .food-comments .bd {
-	margin-left: 30px;
+.food-related section>.hd, .food-related section>.bd {
+	margin-left: 10px;
 }
 
-.food-comments .comment-item {
-	margin-left: 0;
+.food-comments>.bd {
+	padding-top: 15px;
 }
 
 .food-share .share-img {
@@ -454,18 +457,21 @@ article .content ul li {
 }
 
 article textarea {
-	width: 660px;
+	width: 96%;
 	min-height: 80px;
 	margin: 5px 0;
 	resize: vertical;
 }
 
+li.comment-item+li.comment-item {
+	border-top: 1px dashed #eee;
+}
+
 .comment-item {
 	font-size: 14px;
-	margin: 20px 0 10px 40px;
-	padding-bottom: 20px;
-	border-bottom: 1px dashed #eee;
-	width: 95%;
+	margin: 20px 0 0;
+	padding: 30px 0 0;
+	width: 100%;
 	position: relative;
 }
 
@@ -485,12 +491,13 @@ article textarea {
 }
 
 .vote-action button:hover {
-	background-color: #827FD3;
-	color: #fff;
+	background-color: #E1E0EC;
+	color: #AD2020;
 }
 
 .comment-item .revert {
 	float: right;
+	margin-right: 10px;
 }
 
 .food-address {
@@ -784,7 +791,6 @@ section.member img {
 	border-left: 1px solid #eee;
 }
 
-
 section.user {
 	padding: 20px;
 	width: 180px;
@@ -804,13 +810,21 @@ section.user .following a {
 	padding: 10px 0;
 	display: inline-block;
 	width: 80px;
-	font-size: 14px;
 	color: #777;
 	text-align: center;
 }
 
-section.user .following a:nth-child(1){
-	border-right: 1px solid #eee; 
+section.user .following a+a{
+	border-left: 1px solid #eee; 
+}
+
+section.user .hometown {
+	padding: 20px;
+	text-align: center;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+	font: 16px cursive;
+	color: #578;
 }
 
 
@@ -868,54 +882,97 @@ section.create time {
 
 /*story + evaluation page*/
 .post-page {
-	margin-top: 10px;
-	margin-left: 0;
+	background-color: #fff;
+	margin: 0;
 }
 
-.post-main {
+.post-page article {
 	position: absolute;
 	left: 0;
 	top: 0;
 }
 
-.post-main>h1 {
-	border-bottom: 1px dashed #eee;
+.text-view {
+	width: 750px;
+	margin: 0 auto;
+}
+
+.post-title,.post-content, .post-action {
+	padding: 35px;
 }
 
 .post-title {
-	color: #555;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
-.post-page aside img {
-	width: 80px;
-	height: 80px;
-	margin: 10px 20px;
-	margin-left: 0;
-	float: left;
-}
-
-.post-page aside .info {
-	padding-top: 10px;
-}
-
-aside .info h3 {
+.post-title h1>a {
+	font-size: 32px;
 	font-weight: lighter;
 }
 
-.post-page aside .top-story {
-	clear: both;	
+.post-content {
+	padding-bottom: 20px;
 }
 
-aside .top-story li {
+.post-page .food-related {
+	position: fixed;
+	padding-top: 20px;
+	background-color: #444;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	border-left: 1px solid #444;
+	padding-left: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3), 0 0 10px rgba(0,0,0,0.3) inset;
+}
+
+.post-page .food-related a {
+	color: #E6E6E6;
+}
+
+.post-page .food-related section {
+	width: 340px;
+	padding: 10px;
+}
+
+.post-page .food-related section>h4 {
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.food-related section figure {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+.post-page .thumb_img img {
+	width: 80px;
+	height: 80px;
+	margin: 10px 0;
+	margin-right: 15px;
+	float: left;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	border-radius:100%;
+}
+
+.post-page .top-story {
+	clear: both;
+	padding: 10px 0;
+}
+
+.post-page .top-story li {
 	padding: 5px 0;
 	display: block;
 	font-size: 14px;
 }
 
-.post-comment .hd, .post-comment .bd {
-	margin-left: 30px;
+.post-page .thumb_img a {
+	font-weight: lighter;
 }
 
-.post-comment .comment-item {
-	margin-left: 0;
+.post-comment {
+	clear: both;
+}
+
+.post-comment .hd, .post-comment .bd {
+	margin-left: 30px;
 }

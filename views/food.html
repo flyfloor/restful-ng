@@ -86,8 +86,8 @@
 						<h4>写条评论</h4>
 					</div>
 					<div class="bd">
-						<form>
-							<textarea id="comment-text" placeHolder="简单写点什么"></textarea>
+						<form method="POST">
+							<textarea id="comment-text" placeHolder="简单写点什么" required></textarea>
 							<button class="submit-btn">发表</button>
 						</form>
 						<ul>
@@ -129,173 +129,157 @@
 					</div>
 				</section>			
 				<section class="food-evaluation module">
-					<ul>
-						<li class="comment-item">
-							<div class="avatar">
-								<a href="#">
-									<img src="../imgs/avatar1.jpg">
-								</a>
-							</div>
-							<div class="hd">
-									<h4>
-										<a href="#">我是专业的点评人</a>
-									</h4>
-								<span>作者：<a href="#">小马甲</a></span>
-							</div>
-							<div class="bd">
-								<h3>1.色</h3>
-								<p>看起来跟烧焦了一样，不好看啊</p>
-								<h3>2.香</h3>
-								<p>闻起来还凑合</p>
-								<h3>3.味</h3>
-								<p>yummy, 我在大城市这么多年，吃尽各种美食，从来没体验过这么好吃的东西...</p>
-							</div>
-							<div class="ft">
-								<time>三个月前</time>
-								<a href="#" data-name="litterrock" class="comments">
-									<span>30</span>
-									评论
-								</a>
-							</div>
-							<div class="vote-action">
-								<button class="btn">
-									<i class="fa fa-heart-o"></i>
-									<span>121</span>
-								</button>
-							</div>
-						</li>
-						<li class="comment-item">
-							<div class="avatar">
-								<a href="#">
-									<img src="../imgs/avatar1.jpg">
-								</a>
-							</div>
-							<div class="hd">
-									<h4>
-										<a href="#">专业点评30年，关于裤带面，你应该知道的</a>
-									</h4>
-								<span>作者：<a href="#">小马甲</a></span>
-							</div>
-							<div class="bd">
-								<p>没有词汇可以形容的美食，真好吃
-								</p>
-							</div>
-							<div class="ft">
-								<time>一个月前</time>
-								<a href="#" data-name="litterrock" class="comments">
-									<span>30</span>
-									评论
-								</a>
-							</div>
-							<div class="vote-action">
-								<button class="btn">
-									<i class="fa fa-heart-o"></i>
-									<span>5</span>
-								</button>
-							</div>
-						</li>
-					</ul>
+					<div class="bd">
+						<ul>
+							<li class="comment-item">
+								<div class="avatar">
+									<a href="#">
+										<img src="../imgs/avatar1.jpg">
+									</a>
+								</div>
+								<div class="hd">
+										<h4>
+											<a href="#">我是专业的点评人</a>
+										</h4>
+									<span>作者：<a href="#">小马甲</a></span>
+								</div>
+								<div class="bd">
+									<h3>1.色</h3>
+									<p>看起来跟烧焦了一样，不好看啊</p>
+									<h3>2.香</h3>
+									<p>闻起来还凑合</p>
+									<h3>3.味</h3>
+									<p>yummy, 我在大城市这么多年，吃尽各种美食，从来没体验过这么好吃的东西...</p>
+								</div>
+								<div class="ft">
+									<time>三个月前</time>
+									<a href="#" data-name="litterrock" class="comments">
+										<span>30</span>
+										评论
+									</a>
+								</div>
+								<div class="vote-action">
+									<button class="btn">
+										<i class="fa fa-heart-o"></i>
+										<span>121</span>
+									</button>
+								</div>
+							</li>
+							<li class="comment-item">
+								<div class="avatar">
+									<a href="#">
+										<img src="../imgs/avatar1.jpg">
+									</a>
+								</div>
+								<div class="hd">
+										<h4>
+											<a href="#">专业点评30年，关于裤带面，你应该知道的</a>
+										</h4>
+									<span>作者：<a href="#">小马甲</a></span>
+								</div>
+								<div class="bd">
+									<p>没有词汇可以形容的美食，真好吃
+									</p>
+								</div>
+								<div class="ft">
+									<time>一个月前</time>
+									<a href="#" data-name="litterrock" class="comments">
+										<span>30</span>
+										评论
+									</a>
+								</div>
+								<div class="vote-action">
+									<button class="btn">
+										<i class="fa fa-heart-o"></i>
+										<span>5</span>
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="food-share module">
-					<ul>
-						<li class="comment-item">
-							<div class="avatar">
-								<a href="#">
-									<img src="../imgs/avatar2.jpg">
-								</a>
-							</div>
-							<div class="hd">
-								<span>
-									<a href="#">fall_ark</a>
-								</span>
-								<time>一年前</time>
-							</div>
-							<div class="bd">
-								<p>我在<a class="food-address" href="http://j.map.baidu.com/v_Kcb" target="_blank"><i class="fa fa-link"></i>
-								<span class="separator"></span>杠子裤带面</a>吃到 裤带面</p>
-								<div class="share-img">
-									<img src="../imgs/noodle2.jpg">
+					<div class="bd">
+						<ul>
+							<li class="comment-item">
+								<div class="avatar">
+									<a href="#">
+										<img src="../imgs/avatar2.jpg">
+									</a>
 								</div>
-							</div>
-						</li>
-					</ul>
+								<div class="hd">
+									<span>
+										<a href="#">fall_ark</a>
+									</span>
+									<time>一年前</time>
+								</div>
+								<div class="bd">
+									<p>我在<a class="food-address" href="http://j.map.baidu.com/v_Kcb" target="_blank"><i class="fa fa-link"></i>
+									<span class="separator"></span>杠子裤带面</a>吃到 裤带面</p>
+									<div class="share-img">
+										<img src="../imgs/noodle2.jpg">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="food-story module">
-					<ul>
-						<li class="comment-item">
-							<div class="avatar">
-								<a href="#">
-									<img src="../imgs/avatar1.jpg">
-								</a>
-							</div>
-							<div class="hd">
-									<h4>
-										<a href="#">忘不了的裤带面，忘不了的故乡情</a>
-									</h4>
-								<span>作者：<a href="#">小马甲</a></span>
-							</div>
-							<div class="bd">
-								<p>有一天秦宫内载歌载舞、锣鼓喧天，欢庆战争取得胜利。秦始皇却在宫中愁眉不展闷闷不乐，为国家还不安宁，不时要受匈奴的外族入侵，还为筹划修筑万里长城之事劳累过度，平日又是日里万机，龙体受病卧榻不起，御膳房做出各种山珍海味，始皇连看都懒得看一眼。这样一来，急坏了宫内所有宦官，他们像热锅上的蚂蚁，纷纷想方设法，其中一名宦官灵机一动，竟跑到集市上给皇上端来一碗biang biang 面，秦始皇一闻到这浓烈的辣子、葱味，就胃口大开了，端起来一顿猛嚼。不想一吃大发而不可收拾，大声赞叹：民间竟有比山珍海味还香的食物！忙问这是何物？答曰：biang biang 面。Biang biang 面还成为秦始皇御宴必备品...
-								</p>
-							</div>
-							<div class="ft">
-								<time>一天前</time>
-								<a href="#" data-name="litterrock" class="comments">
-									<span>30</span>
-									评论
-								</a>
-							</div>
-						</li>
-						<li class="comment-item">
-							<div class="avatar">
-								<a href="#">
-									<img src="../imgs/avatar1.jpg">
-								</a>
-							</div>
-							<div class="hd">
-									<h4>
-										<a href="#">陕北娃的北漂故事</a>
-									</h4>
-								<span>作者：<a href="#">小马甲</a></span>
-							</div>
-							<div class="bd">
-								<p>忘记了从什么时候开始，乱码乱码各种风哇乏味发我if和哇哦发哈我粉红色的话费送咖啡酒文化苏杭覅uwebfwajfbfawfwafhwafawefwf风哇风哇发和瓦房哈维凤凰卡违法哇科副教授级回复将开发为...
-								</p>
-							</div>
-							<div class="ft">
-								<time>三个月前</time>
-								<a href="#" data-name="litterrock" class="comments">
-									<span>30</span>
-									评论
-								</a>
-							</div>
-						</li>
-					</ul>
+					<div class="bd">
+						<ul>
+							<li class="comment-item">
+								<div class="avatar">
+									<a href="#">
+										<img src="../imgs/avatar1.jpg">
+									</a>
+								</div>
+								<div class="hd">
+										<h4>
+											<a href="#">忘不了的裤带面，忘不了的故乡情</a>
+										</h4>
+									<span>作者：<a href="#">小马甲</a></span>
+								</div>
+								<div class="bd">
+									<p>有一天秦宫内载歌载舞、锣鼓喧天，欢庆战争取得胜利。秦始皇却在宫中愁眉不展闷闷不乐，为国家还不安宁，不时要受匈奴的外族入侵，还为筹划修筑万里长城之事劳累过度，平日又是日里万机，龙体受病卧榻不起，御膳房做出各种山珍海味，始皇连看都懒得看一眼。这样一来，急坏了宫内所有宦官，他们像热锅上的蚂蚁，纷纷想方设法，其中一名宦官灵机一动，竟跑到集市上给皇上端来一碗biang biang 面，秦始皇一闻到这浓烈的辣子、葱味，就胃口大开了，端起来一顿猛嚼。不想一吃大发而不可收拾，大声赞叹：民间竟有比山珍海味还香的食物！忙问这是何物？答曰：biang biang 面。Biang biang 面还成为秦始皇御宴必备品...
+									</p>
+								</div>
+								<div class="ft">
+									<time>一天前</time>
+									<a href="#" data-name="litterrock" class="comments">
+										<span>30</span>
+										评论
+									</a>
+								</div>
+							</li>
+							<li class="comment-item">
+								<div class="avatar">
+									<a href="#">
+										<img src="../imgs/avatar1.jpg">
+									</a>
+								</div>
+								<div class="hd">
+										<h4>
+											<a href="#">陕北娃的北漂故事</a>
+										</h4>
+									<span>作者：<a href="#">小马甲</a></span>
+								</div>
+								<div class="bd">
+									<p>忘记了从什么时候开始，乱码乱码各种风哇乏味发我if和哇哦发哈我粉红色的话费送咖啡酒文化苏杭覅uwebfwajfbfawfwafhwafawefwf风哇风哇发和瓦房哈维凤凰卡违法哇科副教授级回复将开发为...
+									</p>
+								</div>
+								<div class="ft">
+									<time>三个月前</time>
+									<a href="#" data-name="litterrock" class="comments">
+										<span>30</span>
+										评论
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</div>
 		</article>
-		<!-- <aside class="food">
-			<section class="food-recommend module">
-				<h4>更多<a href="#">陕西</a>美食：</h4>
-				<ul>
-					<li><a href="#">
-						<img src="../imgs/thumb_img.jpg">油泼面</a></li>
-					<li><a href="#"><img src="../imgs/thumb_img2.jpg">凉皮</a></li>
-					<li><a href="#"><img src="../imgs/thumb_img3.jpg">肉夹馍</a></li>
-					<li><a href="#"><img src="../imgs/thumb_img.jpg">羊肉泡</a></li>
-					<li><a href="#"><img src="../imgs/thumb_img.jpg">羊肉泡</a></li>
-					<li><a href="#"><img src="../imgs/thumb_img.jpg">羊肉泡</a></li>
-				</ul>
-			</section>
-			<section class="food-group module">
-				<h4>相关小组：</h4>
-				<ul>
-					<li><a href="#"><img src="../imgs/wecaneat.png"><h5>陕西面食</h5><span>42 吃货</span></a></li>
-					<li><a href="#"><img src="../imgs/wecaneat.png"><h5>北方面食</h5><span>42 吃货</span></a></li>
-					<li><a href="#"><img src="../imgs/wecaneat.png"><h5>陕西吃货群</h5><span>42 吃货</span></a></li>
-				</ul>
-			</section>
-		</aside> -->
 	</div>
 	<script src="../main.js"></script>
 </body>
