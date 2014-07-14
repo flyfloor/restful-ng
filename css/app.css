@@ -909,6 +909,7 @@ section.create time {
 .post-title h1>a {
 	font-size: 32px;
 	font-weight: lighter;
+	text-decoration: none;
 }
 
 .post-content {
