@@ -166,13 +166,13 @@ a.action {
 }
 
 .btn {
-	padding: 6px 5px;
+	padding: 4px 5px;
 	background-color: #f8f8f8;
 	color: #6B6B6B;
-	border: 1px solid #ddd;
+	border: 1px solid #e8e8e8;
 	cursor: pointer;
-	border-radius: 3px;
-	min-width: 60px;
+	border-radius: 2px;
+	min-width: 50px;
 	margin: 10px 0;
 }
 
@@ -182,7 +182,7 @@ a.action {
 	-ms-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
-	background-color: #e5e5e5;
+	background-color: #eeeeee;
 }
 
 .grey {
@@ -228,7 +228,7 @@ clip {
 	white-space: nowrap;
 	background-color: #e5f5ff;
 	border-left: 1px solid #aaf;
-	padding: 3px 5px;
+	padding: 2px 3px;
 	margin-left: 3px;
 }
 
@@ -321,6 +321,19 @@ article {
 	width: 780px;
 	margin: 0 auto;
 	min-height: 600px;
+}
+
+article .content ul li{
+	display: list-item;
+	margin-left: 20px;
+}
+
+article .content ul li {
+	list-style-type: disc;
+}
+
+article .content ol li {
+	list-style-type: decimal;
 }
 
 /*food page*/
@@ -435,14 +448,6 @@ article .bref-author-info {
 	margin-right: 10px;
 }
 
-
-article .content ul li {
-	list-style-type: disc;
-	display: list-item;
-	margin-left: 30px;
-}
-
-
 .food-related section>.hd, .food-related section>.bd {
 	margin-left: 10px;
 }
@@ -491,8 +496,8 @@ li.comment-item+li.comment-item {
 }
 
 .vote-action button:hover {
-	background-color: #E1E0EC;
-	color: #AD2020;
+	background-color: #EEEEEE;
+	color: #360F0F;
 }
 
 .comment-item .revert {
