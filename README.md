@@ -1,4 +1,4 @@
 restful-ng
 ==========
 
-start with angularJs
+about food, use angular
